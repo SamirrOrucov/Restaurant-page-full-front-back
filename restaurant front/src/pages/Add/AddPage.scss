@@ -1,0 +1,34 @@
+.form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 80px auto;
+    input{
+        padding: 15px;
+        border-radius: 12px;
+    }
+}
+table {
+    margin: 30px auto;
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

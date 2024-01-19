@@ -1,0 +1,98 @@
+.detail_container {
+    max-width: 65%;
+    margin: 100px auto;
+    &_head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      flex-direction: column;
+      gap: 30px;
+      span {
+        font-size: 12px;
+        color: #d4d3d325(255, 255, 255, 0.459);
+      }
+      p {
+        color: #404044;
+        font-size: 36px;
+      }
+      .category {
+        display: flex;
+        gap: 20px;
+        button {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          background-color: #ffb400;
+          color: #404044;
+          padding: 20px 30px;
+          border: none;
+          font-size: 17px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+    &_cards {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      &_card {
+        transition: 300ms;
+        &:hover {
+          background-color: #ffb400;
+        }
+        cursor: pointer;
+        padding: 10px;
+        width: 540px;
+        height: 100px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        .image {
+          width: 70px;
+          height: 70px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        .info {
+          display: flex;
+          gap: 50px;
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .title {
+              font-size: 18px;
+              color: #404044;
+            }
+            .detail {
+              color: #8b8b92;
+            }
+          }
+          .price{
+            font-size: 20px;
+          }
+        }
+        .operations{
+            display: flex;
+            gap: 10px;
+            i{
+                cursor: pointer;
+                font-size: 18px;
+                transition: 300ms;
+                &:hover{
+                    color: #fafafa;
+                }
+            }
+        }
+      }
+    }
+  }
